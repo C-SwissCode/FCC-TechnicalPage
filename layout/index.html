@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HTML5 Documentation Page</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Caleb">
+  <meta name="description" content="Documentation page describing the basics of HTML5">
+  <link rel="stylesheet" type="text/css" href="./style-index.css">
+</head>
+<body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header id="nav-header">HTML5 Documentation</header>
+  <ul>
+    <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+    <li><a class="nav-link" href="#Hello_World!">Hello World!</a></li>
+    <li><a class="nav-link" href="#Paragraphs">Paragraphs</a></li>
+    <li><a class="nav-link" href="#External_Links">External Links</a></li>
+    <li><a class="nav-link" href="#Internal_Links">Internal Links</a></li>
+  </ul>
+</nav>
+<main id="main-doc">
+
+  <section class="main-section" id="Introduction">
+    <header class="article-header">Introduction</header>
+    <article class="articles">
+      <p>
+        HTML, or HyperText Markup Language, is a markup language used to describe the structure of a web page. It uses a
+        special syntax or notation to organize and give information about the page to the browser. Elements usually have
+        opening and closing tags that surround and give meaning to content. For example, there are different tag options
+        to place around text to show whether it is a heading, a paragraph, or a list.
+        <br>
+        For example:
+      </p>
+      <code>
+        &lt;ol&gt;
+           &lt;li&gt;list item one&lt;/li&gt;
+           &lt;li&gt;list item two&lt;/li&gt;
+           &lt;li&gt;list item three&lt;/li&gt;
+        &lt;/ol&gt;
+      </code>
+      <p>
+        Becomes:
+        <br>
+        <ol>
+          <li>list item one</li>
+          <li>list item two</li>
+          <li>list item three</li>
+        </ol>
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Hello_World!">
+    <header class="article-header">Hello World!</header>
+    <article class="articles">
+      <p>
+        The h2 element you will be adding in this step will add a level two heading to the web page.
+        <br>
+        This element tells the browser about the structure of your website. h1 elements are often used for main
+        headings,
+        while h2 elements are generally used for subheadings. There are also h3, h4, h5 and h6 elements to indicate
+        different levels of subheadings.
+      </p>
+      For Example:
+      <code>
+        &lt;h5&gt;Hello World&lt;/h5&gt;
+      </code>
+      <p>
+        Becomes:
+        <h5>Hello World</h5>
+        There is a total of six header elements in HTML5 listed below:
+        <ul>
+          <li>h1</li>
+          <li>h2</li>
+          <li>h3</li>
+          <li>h4</li>
+          <li>h5</li>
+          <li>h6</li>
+        </ul>
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="Paragraphs">
+    <header class="article-header">Paragraphs</header>
+    <article class="articles">
+      <p>
+        p elements are the preferred element for paragraph text on websites. p is short for "paragraph".
+        <br>
+        You can create a paragraph element like this:
+        <code>
+          &lt;p&gt;I'm a p tag!&lt;/p&gt;
+        </code>
+        Becomes:
+        <p>I'm a p tag!</p>
+      </p>
+    </article>
+  </section>
+
+  <section class="main-section" id="External_Links">
+    <header class="article-header">External Links</header>
+    <article class="articles">
+      <P>
+        You can use a (anchor) elements to link to content outside of your web page.
+        <br>
+        a elements need a destination web address called an href attribute. They also need anchor text. Here's an
+        example:
+        <code>
+          &lt;a href="https://freecodecamp.org"&gt;this links to freecodecamp.org&lt;/a&gt;
+        </code>
+      </P>
+      <P>
+        Becomes:
+        <br>
+        This text <a href="https://freecodecamp.org" target="_blank">links to freecodecamp</a>, which links to the site when you click
+        it.
+      </P>
+    </article>
+  </section>
+
+  <section class="main-section" id="Internal_Links">
+    <header class="article-header">Internal Links</header>
+    <article class="articles">
+      <p>
+        a (anchor) elements can also be used to create internal links to jump to different sections within a webpage.
+        <br>
+        To create an internal link, you assign a link's href attribute to a hash symbol # plus the value of the id
+        attribute
+        for the element that you want to internally link to, usually further down the page. You then need to add the
+        same id
+        attribute to the element you are linking to. An id is an attribute that uniquely describes an element.
+        <br>
+        Below is an example of an internal anchor link and its target element:
+        <code>
+          &lt;a href="#contacts-header"&gt;Contacts&lt;/a&gt;
+          ...
+          &lt;h2 id="contacts-header"&gt;Contacts&lt;/h2&gt;
+        </code>
+      </p>
+      <p>
+        When users click the Contacts link, they'll be taken to the section of the webpage with the
+        <strong>Contacts</strong> header element.
+      </p>
+    </article>
+  </section>
+
+</main>
+</body>
+
+</html>
